@@ -2,8 +2,11 @@ package com.softplan.desafiogeradorobservacao.com.softplan.desafiogeradorobserva
 
 import static org.junit.Assert.assertTrue;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.junit.Test;
 
@@ -18,38 +21,30 @@ public class GeradorObservacaoRefatoradoTest {
 
 		GeradorObservacaoRefatorado gerador = new GeradorObservacaoRefatorado();
 
-		List<Integer> lista = new ArrayList();
+		Map<Integer, BigDecimal> mapFaturas = new HashMap<Integer, BigDecimal>();
+		mapFaturas.put(1, new BigDecimal(10));
+		mapFaturas.put(2, new BigDecimal(35));
+		mapFaturas.put(3, new BigDecimal(5));
+		mapFaturas.put(4, new BigDecimal(1500));
+		mapFaturas.put(5, new BigDecimal(0.3));
 
-		lista.add(1);
-		lista.add(2);
-		lista.add(3);
-		lista.add(4);
-		lista.add(5);
-
-		String result = gerador.geraObservacao(lista);
+		String result = gerador.geraObservacao(mapFaturas);
 
 		assertTrue(result.equals(esperado));
 	}
-	
-	
-	
+
+	@Test
 	public void geradorObservacaoRefatorado_ExemploSingularTest() {
-		String esperado = "Fatura da nota fiscal de simples remessa: 1";
+		String esperado = "Fatura da nota fiscal de simples remessa: 1.";
 
 		GeradorObservacaoRefatorado gerador = new GeradorObservacaoRefatorado();
 
-		List<Integer> lista = new ArrayList();
+		Map<Integer, BigDecimal> mapFaturas = new HashMap<Integer, BigDecimal>();
+		mapFaturas.put(1, new BigDecimal(10));
 
-		lista.add(1);
-		lista.add(2);
-		lista.add(3);
-		lista.add(4);
-		lista.add(5);
-
-		String result = gerador.geraObservacao(lista);
+		String result = gerador.geraObservacao(mapFaturas);
 
 		assertTrue(result.equals(esperado));
 	}
-
 
 }
