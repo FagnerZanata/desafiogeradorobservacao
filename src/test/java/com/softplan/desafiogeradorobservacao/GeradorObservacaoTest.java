@@ -1,4 +1,4 @@
-package com.softplan.desafiogeradorobservacao.com.softplan.desafiogeradorobservacao;
+package com.softplan.desafiogeradorobservacao;
 
 import static org.junit.Assert.assertTrue;
 

@@ -1,13 +1,10 @@
-package com.softplan.desafiogeradorobservacao.com.softplan.desafiogeradorobservacao;
+package com.softplan.desafiogeradorobservacao;
 
 import java.util.Iterator;
 import java.util.List;
 
 public class GeradorObservacao { 
 
-	public GeradorObservacao() {
-		
-	}
 	
 	//Textos pr�-definidos
 	static final String umoNota = "Fatura da nota fiscal de simples remessa: ";

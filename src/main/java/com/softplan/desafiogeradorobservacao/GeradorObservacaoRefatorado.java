@@ -1,4 +1,4 @@
-package com.softplan.desafiogeradorobservacao.com.softplan.desafiogeradorobservacao;
+package com.softplan.desafiogeradorobservacao;
 
 import java.math.BigDecimal;
 import java.text.NumberFormat;
@@ -23,15 +23,7 @@ public class GeradorObservacaoRefatorado {
 		}
 	}
 
-	/**
-	 * Gera observa��es, com texto pre-definido, incluindo os n�meros, das notas
-	 * fiscais, recebidos no par�metro
-	 * 
-	 * @param <T>
-	 * 
-	 * @param faturaFiscalSR
-	 * @return
-	 */
+	
 	public <T> String geraObservacao(List<T> faturaFiscalSR) {
 		if (!faturaFiscalSR.isEmpty()) {
 
