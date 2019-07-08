@@ -25,8 +25,8 @@
 
 
 ## Ambiente
-* Utilizado java 11 e Ecplise.
-* Compilacao e execucao dos teste: mvn clean install
+* Utilizado Java 11 e IDE Eclipse.
+* Compilacao e execucao: mvn clean install
 
 
 
