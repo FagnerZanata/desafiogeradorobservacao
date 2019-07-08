@@ -24,4 +24,15 @@
 * GeradorObservacaoRefatorado : Sistema novo
 
 
+## Ambiente
+* Utilizado java 11 e Ecplise.
+* Compilacao e execucao dos teste: mvn clean install
+
+
+
+
+
+
+
+
 
